@@ -6,17 +6,17 @@ int main(){
 	setlocale(LC_ALL, "portuguese");
 	
 	// Declarando as variáveis
-	int valor, desconto;
+	float valor, desconto;
 
 	// Campo para o usuario preencher
 	printf("Digite um valor:\n");
-	scanf("%d", &valor);
+	scanf("%f", &valor);
 
 	// Calculando o desconto
 	desconto = valor * 0.10;
 
 	// Exibindo o resultado na tela
-	printf("Resultado: %d\n", desconto);
+	printf("Resultado: %.2f\n", desconto);
 	
 	return 0;
 	
