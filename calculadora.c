@@ -1,7 +1,11 @@
 #include <stdio.h>
+#include <stdlib.h>
+#include <locale.h>
 
 int main(){
-	// Declarando as variáveis
+	setlocale(LC_ALL, "portuguese");
+	
+	// Declarando as variÃ¡veis
 	int primeiroNumero, segundoNumero;
 	int soma, subtracao, multiplicacao, divisao;
 	
@@ -11,11 +15,14 @@ int main(){
 	printf("Digite o segundo numero:\n");
 	scanf("%d", &segundoNumero);
 	
-	// Calculando as operações para o usuario
+	// Calculando as operaÃ§Ãµes para o usuario
 	soma = primeiroNumero + segundoNumero;
 	subtracao = primeiroNumero - segundoNumero;
 	multiplicacao = primeiroNumero * segundoNumero;
 	divisao = primeiroNumero / segundoNumero;
+
+	// Limpa o terminal no windows
+	system("cls"); 
 	
 	// Exibindo os resultados na tela
 	printf("Resultado:\n");
