@@ -1,7 +1,11 @@
 #include <stdio.h>
+#include <stdlib.h>
+#include <locale.h>
 
 int main(){
-	// Declarando as vari·veis
+	setlocale(LC_ALL, "portuguese");
+	
+	// Declarando as vari√°veis
 	char nome [50];
 	int idade;
 	float primeiraNota, segundaNota, terceiraNota, quartaNota, media;
@@ -24,6 +28,9 @@ int main(){
 	
 	// Calculando a media do aluno
 	media = (primeiraNota + segundaNota + terceiraNota + quartaNota)/4;
+
+	// Libera o terminal no windows
+	system("cls");
 	
 	// Exibindo a media do aluno no terminal
 	printf("Resultado:\n");
