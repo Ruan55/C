@@ -5,7 +5,7 @@
 int main(){
 	setlocale(LC_ALL, "");
 	
-	// Declarando as vari·veis
+	// Declarando as vari√°veis
 	char nome [50];
 	int idade;
 	
@@ -14,15 +14,16 @@ int main(){
 	scanf("%s", &nome);
 	printf("Digite a sua idade:\n");
 	scanf("%d", &idade);
-	
+
+	// Verificando as idades
 	if(idade < 18 || idade >= 65){
 		
-		printf("N„o È obrigado a votar!\n");
+		printf("N√£o √© obrigado a votar!\n");
 		
 	}
 	else{
 		
-		printf("… obrigado a votar!\n");
+		printf("√â obrigado a votar!\n");
 		
 	}
 	
