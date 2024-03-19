@@ -5,60 +5,60 @@
 int main(){
 	setlocale(LC_ALL, "");
 	
-	// Declarando as variávaeis
+	// Declarando as variÃ¡vaeis
 	int primeiroNumero, segundoNumero;
 	int soma, produto, menorValor, maiorValor;
 	float media;
 	
 	// Campo para o usuario preencher
-	printf("Digite o primeiro número:\n");
+	printf("Digite o primeiro nÃºmero:\n");
 	scanf("%d", &primeiroNumero);
-	printf("Digite o segundo número:\n");
+	printf("Digite o segundo nÃºmero:\n");
 	scanf("%d", &segundoNumero);
 	
 	// Realizando os calculos
 	soma = primeiroNumero + segundoNumero;
-	media = soma / 2;
+	media = soma / (float) 2;
 	produto = primeiroNumero * segundoNumero;
 	
-	// Verificando qual é o maior e o menor valor
+	// Verificando qual Ã© o maior e o menor valor
 	if(primeiroNumero > segundoNumero){
 		
-		printf("Primeiro Numero é maior\n");
+		printf("Primeiro Numero Ã© maior\n");
 		
 	}
 	else{
 		
-		printf("Segundo numero é maior\n");
+		printf("Segundo numero Ã© maior\n");
 		
 	}
 	
 	if(primeiroNumero < segundoNumero){
 		
-		printf("Primeiro numero é menor\n");
+		printf("Primeiro numero Ã© menor\n");
 		
 	}
 	else{
 		
-		printf("Segundo numero é menor\n");
+		printf("Segundo numero Ã© menor\n");
 		
 	}
 	
-	// Verificando se os numero são iguais
+	// Verificando se os numero sÃ£o iguais
 	if(primeiroNumero == segundoNumero){
 		
-		printf(" Os valores são iguais\n");
+		printf(" Os valores sÃ£o iguais\n");
 		
 	}
 	else{
 		
-		printf(" Os valores são diferentes\n");
+		printf(" Os valores sÃ£o diferentes\n");
 		
 	}
 	
 	// Exibindo o resultado na tela
 	printf("Resultado:\n");
-	printf("Média: %.2f\n", media);
+	printf("MÃ©dia: %.2f\n", media);
 	printf("Soma: %d\n", soma);
 	printf("Produto: %d\n", produto);
 
