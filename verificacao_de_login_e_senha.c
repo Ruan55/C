@@ -4,9 +4,10 @@
 #include <string.h>
 
 int main(){
+	// Adicionando alguns elementos da lingua portuguesa
 	setlocale(LC_ALL, "portuguese");
 	
-	// Declarando as vari·veis
+	// Declarando as vari√°veis
 	char loginSalvo [200] = "Ruan";
 	char senhaSalvo [200] = "123456";
 	char login[200];
