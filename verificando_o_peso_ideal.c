@@ -3,9 +3,10 @@
 #include <locale.h>
 
 int main(){
+	// Adicionando alguns elementos da lingua portuguesa
 	setlocale(LC_ALL, "portuguese");
 	
-	// Declarando as variáveis
+	// Declarando as variÃ¡veis
 	char sexo;
 	float pesoIdeal, altura;
 	
@@ -15,7 +16,7 @@ int main(){
 	printf("Digite a sua altura:\n");
 	scanf("%f", &altura);
 	
-	// Verificando as informações
+	// Verificando as informaÃ§Ãµes
 	switch(sexo){
 		
 		case 'M':
@@ -35,6 +36,6 @@ int main(){
 	printf("Resultado:\n");
 	printf("Sexo: %c\n", sexo);
 	printf("Altura: %.2f\n", altura);
-	printf("Seu peso ideal é: %.2f\n", pesoIdeal);
+	printf("Seu peso ideal Ã©: %.2f\n", pesoIdeal);
 	
 }
