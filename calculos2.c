@@ -1,7 +1,8 @@
 #include <stdio.h>
 
 int main(){
-	
+
+	// Exemplo das operações sendo imprimidas no terminal
 	int dado = 10;
 	printf("Dado antes do incremento: %d.\n", dado);
 	
