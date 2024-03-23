@@ -3,17 +3,18 @@
 #include <locale.h>
 
 int main(){
+	// Adicionando alguns elementos da lingua portuguesa
 	setlocale(LC_ALL, "portuguese");
 	
-	// Declarando as vari·veis
+	// Declarando as vari√°veis
 	int maca;
 	float totalDaCompra;
 	
 	// Campo para o cliente preencher
-	printf("Digite a quantidade de maÁ„s compradas:\n");
+	printf("Digite a quantidade de ma√ß√£s compradas:\n");
 	scanf("%d", &maca);
 	
-	// Definindo o preÁo das maÁ„s
+	// Definindo o pre√ßo das ma√ß√£s
 	if(maca < 12){
 		
 		totalDaCompra = maca * 1.30;
@@ -32,7 +33,7 @@ int main(){
 	
 	// Exibindo os resultados na tela
 	printf("Resultado:\n");
-	printf("MaÁ„s compradas: %d\n", maca);
+	printf("Ma√ß√£s compradas: %d\n", maca);
 	printf("Total da compra: R$ %.2f\n", totalDaCompra);
 	
 	
