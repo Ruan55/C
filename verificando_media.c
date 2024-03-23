@@ -3,9 +3,10 @@
 #include <locale.h>
 
 int main(){
+	// Adicionando alguns elementos da lingua portuguesa
 	setlocale(LC_ALL, "portuguese");
 	
-	// Declarando as vari·veis
+	// Declarando as vari√°veis
 	char nome [50];
 	int idade;
 	float media;
@@ -21,12 +22,12 @@ int main(){
 	// Verificando a media do aluno
 	if(media >= 7){
 		
-		printf("Aluno est· aprovado!");
+		printf("Aluno est√° aprovado!");
 		
 	}
 	else{
 		
-		printf("Aluno est· reprovado!");
+		printf("Aluno est√° reprovado!");
 		
 	}
 	
