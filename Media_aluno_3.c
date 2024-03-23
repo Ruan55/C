@@ -3,7 +3,7 @@
 #include <locale.h>
 
 int main(){
-	// Adionando alguns elementos da lingua portuguesa
+	// Adicionando alguns elementos da lingua portuguesa
 	setlocale(LC_ALL, "portuguese");
 	
 	// Declarando as variáveis
