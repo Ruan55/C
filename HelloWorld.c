@@ -3,9 +3,10 @@
 
 int main(){
 		
-	//CÛdigo
+	// Exibindo um Ol√° mundo no terminal
 	printf("Hello World!!!\n");	
-	
+
+	// Limpando o terminal
 	system("pause");
 	
 }
