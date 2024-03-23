@@ -3,9 +3,10 @@
 #include <locale.h>
 
 int main(){
+	// Adionando alguns elementos da lingua portuguesa
 	setlocale(LC_ALL, "portuguese");
 	
-	// Declarando as vari·veis
+	// Declarando as vari√°veis
 	char nome [50];
 	float primeiraNota, segundaNota, media;
 		
