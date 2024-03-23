@@ -3,9 +3,10 @@
 #include <locale.h>
 
 int main(){
+	// Adicionando alguns elementos da lingua portuguesa
 	setlocale(LC_ALL, "portuguese");
 	
-	// Declarando as vari·veis
+	// Declarando as vari√°veis
 	float salario, numeroDeSalarios, salarioMinimo = 1412.00;
 	
 	// Campo para o usuario preencher
