@@ -3,6 +3,7 @@
 #define texto "Entrada de dados."
 
 int main(){
+	// Exibindo a entrada de dados
 	printf("%s\n", texto);
 	
 	// Declarando as variaveis
@@ -19,7 +20,8 @@ int main(){
 	
 	printf("Digite o seu nome:\n");
 	scanf("%s", nome);
-	
+
+	// Imprimindo as informações no terminal
 	printf("Dados exibidos: \n");
 	printf("Idade: %d\n", idade);
 	printf("Altura: %.2f\n", altura);
