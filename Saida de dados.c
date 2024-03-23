@@ -1,7 +1,8 @@
 #include <stdio.h>
 
 int main(){
-	
+
+	// Imprimindo as saidas de dados para o terminal
 	printf("Oi, tudo bem? Tenho 21 anos e estou programando. \n");
 	
 	printf("Valor inteiro: %d.\n", 10);	
