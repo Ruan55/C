@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 int main(){
-	// Declarando as vari·veis
+	// Declarando as vari√°veis
 	int notas, soma;
 	float media;
 	int i;
@@ -10,10 +10,11 @@ int main(){
 	for(i = 0; i < 4; i++){
 		printf("Digite um numero: ", i);
 		scanf("%d", &notas);
-		
+
+		// Somando as notas
 		soma = soma + notas;
 	}
-	
+		// Calculando a media
 		media = soma / 4 ;
 	
 	// Exibindo os resultados na tela
