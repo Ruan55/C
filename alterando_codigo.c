@@ -1,14 +1,16 @@
 #include <stdio.h>
 #include <locale.h>
+#include <limits.h>
 
 int main() {
     setlocale(LC_ALL, "");
    
-    int valor, somaGeral = 0, somaPares = 0, contadorGeral = 0, maiorNum, menorNum;
+    int valor, somaGeral = 0, somaPares = 0, contadorGeral = 0, maiorNum = INT_MIN, menorNum = INT_MIN;
     int pares = 0, impares = 0;
+    int maiorNum = INT_MAX, menorNum = INT_MIN;
     float mediaGeral, mediaPares;
    
-    printf("Digite um número: ");
+    printf("Digite um nÃºmero: ");
     scanf("%i",&valor);
     
     maiorNum = valor;
@@ -29,10 +31,10 @@ int main() {
                 impares++;
             }
         }        
-            printf("Digite um número: ");
+            printf("Digite um nÃºmero: ");
             scanf("%i",&valor);
             
-            // Verificando qual é o maior e o menor numero
+            // Verificando qual Ã© o maior e o menor numero
             if(valor > maiorNum){
             	maiorNum = valor;
 			}
@@ -43,7 +45,7 @@ int main() {
     }
    
     if (contadorGeral == 0) {
-        printf("Não foi informado um número positivo.");
+        printf("NÃ£o foi informado um nÃºmero positivo.");
     } else {
         // cast
         // 2 -> 2.0
@@ -51,11 +53,14 @@ int main() {
         mediaPares = somaPares / (float) pares;
        
         printf("Quantidade de pares: %i \n", pares);
-        printf("Quantidade de ímpares: %i \n", impares);
-        printf("Média geral: %.1f \n", mediaGeral);
-        printf("Média de números pares: %.1f \n", mediaPares);
-        printf("O maior numero é: %d\n", maiorNum);
-        printf("O menor numero é: %d\n", menorNum);
+        printf("Quantidade de Ã­mpares: %i \n", impares);
+        printf("MÃ©dia geral: %.1f \n", mediaGeral);
+        printf("MÃ©dia de nÃºmeros pares: %.1f \n", mediaPares);
+        printf("O maior numero Ã©: %d\n", maiorNum);
+        printf("O menor numero Ã©: %d\n", menorNum);
+
+	printf("Maior numero inteiro: %d\n", INT_MAX);
+        printf("Menor numero inteiro: %d\n", INT_MIN);
     }
    
     return 0;
