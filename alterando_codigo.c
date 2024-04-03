@@ -7,7 +7,6 @@ int main() {
    
     int valor, somaGeral = 0, somaPares = 0, contadorGeral = 0, maiorNum = INT_MIN, menorNum = INT_MIN;
     int pares = 0, impares = 0;
-    int maiorNum = INT_MAX, menorNum = INT_MIN;
     float mediaGeral, mediaPares;
    
     printf("Digite um número: ");
@@ -58,9 +57,6 @@ int main() {
         printf("Média de números pares: %.1f \n", mediaPares);
         printf("O maior numero é: %d\n", maiorNum);
         printf("O menor numero é: %d\n", menorNum);
-
-	printf("Maior numero inteiro: %d\n", INT_MAX);
-        printf("Menor numero inteiro: %d\n", INT_MIN);
     }
    
     return 0;
