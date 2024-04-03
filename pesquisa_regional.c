@@ -13,13 +13,13 @@ int main(){
 	int i = 0;
 		
 	
-	// Aplicando a estrutura de repetição do while
+	// Aplicando a estrutura de repetiÃ§Ã£o do while
 	do{
 		
 		int quantidadeDePessoas;
 		
-		// Menu de opções 
-		printf("Codigo | Descrição\n");
+		// Menu de opÃ§Ãµes 
+		printf("Codigo | DescriÃ§Ã£o\n");
 		printf("1 | Adicionar pessoa\n");
 		printf("2 | Exibir resultado e sair\n");
 		scanf(" %d", &quantidadeDePessoas);
@@ -60,7 +60,7 @@ int main(){
 			
 			case 2:
 				// Exibindo o resultado no terminal
-				printf("A media salarial é de: %.2f\n", mediaSalarial / quantidadeDePessoas + i);
+				printf("A media salarial Ã© de: %.2f\n", mediaSalarial / quantidadeDePessoas);
 				printf("Maior idade do grupo: %d\n", maiorIdade);
 				printf("Menor idade do grupo: %d\n", menorIdade);
 				printf("Quantidade de mulheres que ganham acima de 5000: %d\n", quantidadeDeMulheres);
