@@ -8,15 +8,13 @@ int main(){
 	// Declarando as variaveis
 	char sexo;
 	int idade, maiorIdade = -100, menorIdade = 100;
-	float salario, mediaSalarial = 0;
-	int quantidadeDeMulheres = 0;
+	float salario, mediaSalarial = 0, somaSalarial = 0;
+	int quantidadeDeMulheres = 0, quantidadeDePessoas;
 	int i;
 		
 	
 	// Aplicando a estrutura de repetição do while
 	do{
-		
-		int quantidadeDePessoas;
 		
 		// Menu de opções 
 		printf("Codigo | Descrição\n");
@@ -41,9 +39,8 @@ int main(){
 
 				// Contador de pessoas que responderam a pesquisa
 				i++;
+				somaSalarial += salario;
 				
-				// Calculando a media salarial
-				mediaSalarial += salario;
 				
 				// Verificando a maior e menor idade do grupo
 				if(idade > maiorIdade){
@@ -56,23 +53,29 @@ int main(){
 		
 				// Verificando a quantidade de mulheres com salario a partir de R$ 5.000,00
 				if(sexo == 'F' && salario >= 5000){
-					quantidadeDeMulheres = quantidadeDeMulheres + 1;
+					quantidadeDeMulheres++;
 				}
 				
 			break;
 			
-			case 2:
-				// Exibindo o resultado no terminal
-				printf("A media salarial é de: %.2f\n", mediaSalarial / quantidadeDePessoas);
-				printf("Maior idade do grupo: %d\n", maiorIdade);
-				printf("Menor idade do grupo: %d\n", menorIdade);
-				printf("Quantidade de mulheres que ganham acima de 5000: %d\n", quantidadeDeMulheres);
-				
-				// Encerrando o programa
-				exit(0);
+			case 2:		
+			// Encerrando o programa
+			break;
+			
+			default:
+				printf("Dados invalidos!\n");
 		}
 		
 		
-	}while(1);
+	}while(quantidadeDePessoas != 2);
 	
+			// Calculando a media salarial
+			mediaSalarial = somaSalarial / i;
+	
+			// Exibindo o resultado no terminal
+			printf("A media salarial é de: %.2f\n", mediaSalarial);
+			printf("Maior idade do grupo: %d\n", maiorIdade);
+			printf("Menor idade do grupo: %d\n", menorIdade);
+			printf("Quantidade de mulheres que ganham acima de 5000: %d\n", quantidadeDeMulheres);
+
 }
