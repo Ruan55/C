@@ -7,15 +7,13 @@ int main(){
 	setlocale(LC_ALL, "portuguese");
 	
 	// Declarando as variáveis
-	float salario, mediaSalario = 0, maiorSalario = INT_MIN, menorSalario = INT_MAX;
-	float mediaFilhos = 0, numeroDeFilhos = 0;
-	int i;
+	float salario, mediaSalario, maiorSalario = INT_MIN, menorSalario = INT_MAX;
+	float mediaFilhos , numeroDeFilhos;
+	int i, totalFamilia;
 	int somaSalarial, somaDeFilhos;
 	
 	// Aplicando o laço de repetição do while
 	do{
-		
-		int totalFamilia;
 
 		// Menu de opções
 		printf("Codigo | Descrição\n");
@@ -52,10 +50,19 @@ int main(){
 			
 			case 2:
 			// Segunda opção do menu
-			
-			// Calculando a media do salario da população
+			// Encerrando o programa
+		    break;
+		    
+		    default:
+		        printf("Dados invalidos!\n");
+		}
+		
+		
+	}while(totalFamilia != 2);
+	
+		    // Calculando a media do salario da população
 			mediaSalario = somaSalarial / i;
-				// Calculando a media do numero de filhos
+			// Calculando a media do numero de filhos
 			mediaFilhos = somaDeFilhos / i;
 			printf("Exibindo os resultados:\n") ;
 			printf("Total de familias que responderam a pesquisa: %d\n", i);
@@ -63,14 +70,5 @@ int main(){
 			printf("Media do número de filhos: %.2f\n", mediaFilhos);
 			printf("Maior salario da população: %.2f\n", maiorSalario);
 			printf("Menor salario da população: %.2f\n", menorSalario);
-			
-			// Encerrando o programa
-			exit(0);
-				
-		}
-		
-		
-	}while(1);
-	
 	
 }
