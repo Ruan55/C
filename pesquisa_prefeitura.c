@@ -6,27 +6,28 @@
 int main(){
 	setlocale(LC_ALL, "portuguese");
 	
-	// Declarando as variáveis
+	// Declarando as variÃ¡veis
 	float salario, mediaSalario = 0, maiorSalario = INT_MIN, menorSalario = INT_MAX;
 	float mediaFilhos = 0, numeroDeFilhos = 0;
 	int i;
+	int somaSalarial, somaDeFilhos;
 	
-	// Aplicando o laço de repetição do while
+	// Aplicando o laÃ§o de repetiÃ§Ã£o do while
 	do{
 		
 		int totalFamilia;
 
-		// Menu de opções
-		printf("Codigo | Descrição\n");
+		// Menu de opÃ§Ãµes
+		printf("Codigo | DescriÃ§Ã£o\n");
 		printf("1 | Adicionar familia\n");
 		printf("2 | Sair e exibir resultados\n");
 		scanf("%d", &totalFamilia);
 		
 		switch(totalFamilia){
-			// Primeira opção do menu
+			// Primeira opÃ§Ã£o do menu
 			case 1:
 			// Solicitando o salario do usuario
-			printf("Digite o seu sálario: ");
+			printf("Digite o seu sÃ¡lario: ");
 			scanf("%f", &salario);
 			
 			// Solicitando o numero de filhos das familias da cidade
@@ -35,12 +36,8 @@ int main(){
 			
 			// Contabilizando o total de familias que responderam a pesquisa
 			i++;
-	
-			// Calculando a media do salario da população
-			mediaSalario += salario;
-			
-			// Calculando a media do numero de filhos
-			mediaFilhos += numeroDeFilhos;
+			somaSalarial += salario;
+			somaDeFilhos += numeroDeFilhos;
 			
 			// Verificando o grupo do maior e do menor salario
 			if(salario > maiorSalario){
@@ -54,13 +51,18 @@ int main(){
 			break;
 			
 			case 2:
-			// Segunda opção do menu
+			// Segunda opÃ§Ã£o do menu
+			
+			// Calculando a media do salario da populaÃ§Ã£o
+			mediaSalario = somaSalarial / i;
+				// Calculando a media do numero de filhos
+			mediaFilhos = somaDeFilhos / i;
 			printf("Exibindo os resultados:\n") ;
 			printf("Total de familias que responderam a pesquisa: %d\n", i);
-			printf("Media salarial da população: %.2f\n", mediaSalario / totalFamilia);
-			printf("Media do número de filhos: %.2f\n", mediaFilhos / totalFamilia);
-			printf("Maior salario da população: %.2f\n", maiorSalario);
-			printf("Menor salario da população: %.2f\n", menorSalario);
+			printf("Media salarial da populaÃ§Ã£o: %.2f\n", mediaSalario);
+			printf("Media do nÃºmero de filhos: %.2f\n", mediaFilhos);
+			printf("Maior salario da populaÃ§Ã£o: %.2f\n", maiorSalario);
+			printf("Menor salario da populaÃ§Ã£o: %.2f\n", menorSalario);
 			
 			// Encerrando o programa
 			exit(0);
