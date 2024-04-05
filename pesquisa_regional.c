@@ -10,7 +10,7 @@ int main(){
 	int idade, maiorIdade = -100, menorIdade = 100;
 	float salario, mediaSalarial = 0;
 	int quantidadeDeMulheres = 0;
-	int i = 0;
+	int i;
 		
 	
 	// Aplicando a estrutura de repetição do while
@@ -38,6 +38,9 @@ int main(){
 				// Solicitando o salario do usuario
 				printf("Digite o seu salario:\n");
 				scanf("%f", &salario);
+
+				// Contador de pessoas que responderam a pesquisa
+				i++;
 				
 				// Calculando a media salarial
 				mediaSalarial += salario;
