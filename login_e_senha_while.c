@@ -6,14 +6,14 @@
 int main(){
 	setlocale(LC_ALL, "portuguese");
 	
-	// Declarando as vari·veis
+	// Declarando as vari√°veis
 	int usuario;
 	char loginSalvo [500]  = "Ruan";
 	char senhaSalvo [500] = "123456";
 	char login [500];
 	char senha [500];
 
-	// Aplicando a estrutura de repetiÁ„o while
+	// Aplicando a estrutura de repeti√ß√£o while
 	while(1){
 
 	// Campo para o usuario preencher
@@ -27,7 +27,6 @@ int main(){
 	if(strcmp(login, loginSalvo) == 0 && strcmp(senha, senhaSalvo) == 0){
 		
 		printf("Acesso garantido!\n");
-		break;
 		
 	}else{
 		
