@@ -2,23 +2,23 @@
 #include <locale.h>
 #include <limits.h>
 
-#define TAM 5
+#define TAM 10
 
 int main(){
 	setlocale(LC_ALL, "portuguese");
 	
-	// Declarando as vari·veis
+	// Declarando as vari√°veis
 	float numerosReais[TAM];
 	int quantidadeDeNumerosNegativos,quantidadeDeNumerosPositivos;
 	int somaNumerosPositivos = 0;
 	int i;
 	
-	// Aplicando a estrutura de repetiÁ„o for
+	// Aplicando a estrutura de repeti√ß√£o for
 	for(i = 0; i < TAM; i++){
 		printf("Digite um numero: ");
 		scanf("%f", &numerosReais[i]);
 		
-		// Verificando se os numeros reais s„o negativos ou positivos
+		// Verificando se os numeros reais s√£o negativos ou positivos
 		if(numerosReais[i] < 0){
 			quantidadeDeNumerosNegativos++;
 		}else if(numerosReais[i] > 0){
